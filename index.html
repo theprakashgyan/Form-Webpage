@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration form</title>
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lato:wght@400;700&display=swap');
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+      }
+      body{
+        font-family:'lato','sans-serif' ;
+        background-color: #d0bfff;
+      }
+      /* .main{
+        padding: 20px 40px;
+        /* margin-left: 36%;
+        margin-top: 5%; */
+        /* width: 500px;
+        margin: 150px auto;
+        background-color:#f3f0ff ;
+        border-radius: 10px;
+
+        box-shadow: 0 12px 24px #9775fa; */
+        
+      
+      .outer-box{
+        
+      }
+      h1{
+        color: #212121;
+        /* font-size: 2.0rem; */
+      }
+      .sign-up{
+        margin: 20px 0;
+      }
+      .sign-up p{
+        margin : 10px 0;
+      }
+      .sign-up p label {
+        display: block;
+        font-size: 18px;
+
+      }
+      .sign-up p input{
+        width: 100%;
+        padding : 10px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        margin-top: 4px ;
+      }
+      .btn{
+        background-color:#e5dbff ;
+        border: none;
+        cursor: pointer;
+    
+      }
+      .btn:hover{
+        background-color:#d0bfff ;
+      }
+      .flex-1{
+        display: flex;
+
+        
+        
+      }
+      .degree-1{
+        /* margin-top: 10px; */
+
+      }
+      #degree{
+        margin-top: 6px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      #year{
+        margin-top: 6px;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      #state{
+        /* margin-top:6px ; */
+        /* margin-bottom: 12px; */
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .text-area{
+        max-width : 200%;
+        margin-top: 6px;
+        border-radius: 5px;
+
+        
+      }
+      .text-area::placeholder{
+        font-size: 15px;
+        align-items: center;
+      }
+      .degree-program{
+        /* margin-right: -38px; */
+        /* display: inline-block; */
+        width: 140px;
+        margin-left: 155px;
+      }
+      .year-program{
+        width: 140px;
+      }
+      .state-type{
+        display: flex;
+        vertical-align: center
+        ; */
+        /* margin-right: 10px; */
+      }
+    </style> 
+  </head>
+  <body>
+    <div class="outer-box">
+    <div class="main">
+      <header>
+      <p>
+        <h1>Student Registration Form</h1>
+      </p>
+    </header>
+    <main class="sign-up">
+      <form action="#">
+        <p>
+          <label for="Name">Full Name</label>
+          <input id="Name" type="text" placeholder="First" required>
+          <input id="Name" type="text" placeholder="Last" required>
+        </p>
+        <p>
+          <label for="DOB">Date of birth</label>
+          <input id="DOB" type="date" >
+        </p>
+        <!-- <p >
+          <span>Gender</span>
+          
+          <input name="gender" type="radio" id="male">
+          <label class="g-lebel" for="male" >Male</label>
+
+          
+          <input name="gender" type="radio" id="male">
+          <label class="g-lebel" for="Female" >Female</label>
+        </p> -->
+        <p>
+        <label for="Email" >Email Address</label>
+        <input id="Email" type="email" required>
+
+        </p>
+        <p>
+          <label for="p-num">Phone Number</label>
+          <select id="p-num" >
+            <option value="p-number">+91</option>
+            
+           
+          </select>
+
+          <input type="number" placeholder="### ### ####" id="Num" required>
+        </p>
+
+        <p>
+          <label for="C-ID">College ID </label>
+          <input type="text" id="C-ID" placeholder="0701cs######@uecu.ac.in" required>
+
+
+        </p>
+        <p>
+          <label for="pass-word"> Password</label>
+          <input type="password" id="pass-word" placeholder="Enter in min 8 characters" required>
+        </p>
+        <p>
+          <label for="pass-word">Confirm Password</label>
+          <input type="password" id="pass-word" placeholder="Confirm password" required>
+        </p>
+        <div class="flex-1">
+        <p>
+          <div class="year-program">
+          <label for="year">Current Year</label>
+          <select id="year">
+            <option value="Degree">Please Select</option>
+            <option value="Year">2020-2021</option>
+            <option value="Year">2021-2022</option>
+            <option value="Year">2022-2023</option>
+            <option value="Year">2023-2024</option>
+          </select>
+        </div>
+
+          <div class="degree-program">
+          <label class="degree-1" for="degree">Degree Program</label>
+          <select id="degree" >
+            <option value="Degree">Please Select</option>
+            <option value="Degree">B-Tech in CSE</option>
+            <option value="Degree">B-Tech in ECE</option>
+            <option value="Degree">B-Tech in EEE</option>
+            <option value="Degree">B-Tech in MECH</option>
+          </select>
+        </div>
+          <label for="category"></label>
+        </p>
+      </div>
+        <p>
+          <label for="">Address</label>
+          <textarea class="text-area" name="address" placeholder="Enter your Address"></textarea>
+        </p>
+        <div class="state-type">
+        <p>
+        <div>
+          <label for="degree">State</label></div>
+          <div>
+          <select id="state">
+            <option >--Select your State--</option>
+            <option >Uttarpradesh</option>
+            <option >Madhyapradesh</option>
+            <option >Rajasthan</option>
+            <option >Bihar</option>
+          </select></div>
+        </p>
+      </div>
+<p>
+          <label for="pin">Pin Code</label>
+          <input type="number" placeholder="Enter your pincode" required>
+        </p>
+         <p>
+        <input class="btn" type="reset"> &nbsp;  &nbsp; <input class="btn" type="submit">
+      </p>
+      </form>
+    </main>
+    </div>
+  </div>
+  </body>
+</html>
